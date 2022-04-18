@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.home-page {
+  &__carousel-item {
+    height: calc(100vh - 56px);
+  }
+
+  .a1 {
+    background-color: black;
+  }
+
+  .a2 {
+    background-color: green;
+  }
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+}
