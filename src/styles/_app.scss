@@ -55,3 +55,26 @@
   height: 30px;
   width: 30px;
 }
+
+.session-page,
+.attestation-page,
+.scholarship-page {
+  display: flex;
+  justify-content: center;
+}
+
+.item-list {
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #a89edc;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(240, 240, 240);
+    }
+  }
+}
