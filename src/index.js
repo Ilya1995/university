@@ -3,8 +3,11 @@ import ReactDOM from 'react-dom/client';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './styles/index.scss';
 import {Header} from './components/Header';
-import {Home} from './pages/Home';
 import {Footer} from './components/Footer';
+import {HomePage} from './pages/HomePage';
+import {AttestationPage} from './pages/AttestationPage';
+import {ScholarshipPage} from './pages/ScholarshipPage';
+import {SessionPage} from './pages/SessionPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,7 +15,10 @@ root.render(
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="attestation" element={<AttestationPage />} />
+        <Route path="scholarship" element={<ScholarshipPage />} />
+        <Route path="session" element={<SessionPage />} />
       </Routes>
       <Footer />
     </Router>

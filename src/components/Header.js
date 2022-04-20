@@ -2,19 +2,28 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
+import {Link} from 'react-router-dom';
 
 const Header = () => {
   return (
     <div className="header">
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">
-            <img src="/logo.png" className="d-inline-block align-top logo" alt="logo" />
+          <Navbar.Brand>
+            <Link to="/">
+              <img src="/logo.png" className="d-inline-block align-top logo" alt="logo" />
+            </Link>
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Аттестация</Nav.Link>
-            <Nav.Link href="#features">Стипендия</Nav.Link>
-            <Nav.Link href="#pricing">Сессия</Nav.Link>
+            <Link className="nav-link" to="/attestation">
+              Аттестация
+            </Link>
+            <Link className="nav-link" to="/scholarship">
+              Стипендия
+            </Link>
+            <Link className="nav-link" to="/session">
+              Сессия
+            </Link>
           </Nav>
         </Container>
       </Navbar>

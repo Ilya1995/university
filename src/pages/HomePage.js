@@ -1,7 +1,7 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div className="home-page">
       <Carousel className="home-page__carousel">
@@ -24,4 +24,4 @@ const Home = () => {
   );
 };
 
-export {Home};
+export {HomePage};
