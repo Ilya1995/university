@@ -6,15 +6,18 @@ const ItemList = () => {
   const navigate = useNavigate();
 
   const goToScholarship = () => {
-    console.log(111);
     navigate('/attestation/departments');
+  };
+
+  const goToCharts = () => {
+    navigate('/attestation/university');
   };
 
   return (
     <div className="item-list">
       <h1>Уровень отображения</h1>
       <div className="my-5">
-        <Item label="Университет" />
+        <Item label="Университет" onClick={goToCharts} />
         <Item label="Институт" />
         <Item label="Кафедра" onClick={goToScholarship} />
         <Item label="Группа" />

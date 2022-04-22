@@ -9,20 +9,21 @@ import {AttestationPage} from './pages/AttestationPage';
 import {ScholarshipPage} from './pages/ScholarshipPage';
 import {SessionPage} from './pages/SessionPage';
 import {DepartmentsPage} from './pages/DepartmentsPage';
+import {ChartsPage} from './pages/ChartsPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="attestation" element={<AttestationPage />} />
-        <Route path="attestation/departments" element={<DepartmentsPage />} />
-        <Route path="scholarship" element={<ScholarshipPage />} />
-        <Route path="session" element={<SessionPage />} />
-      </Routes>
-      <Footer />
-    </Router>
-  </React.StrictMode>,
+  <Router>
+    <Header />
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="attestation" element={<AttestationPage />} />
+      <Route path="attestation/departments" element={<DepartmentsPage />} />
+      <Route path="attestation/departments/:name" element={<ChartsPage />} />
+      <Route path="attestation/university" element={<ChartsPage />} />
+      <Route path="scholarship" element={<ScholarshipPage />} />
+      <Route path="session" element={<SessionPage />} />
+    </Routes>
+    <Footer />
+  </Router>,
 );
