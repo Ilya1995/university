@@ -25,10 +25,16 @@
 }
 
 .departments-page,
-.charts-page {
+.charts-page,
+.institutions-page {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.list-group-btn {
+  position: relative;
+  left: -0.75rem;
 }
 
 .item-list {
@@ -87,4 +93,40 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.institution-btn {
+  background-color: #e8f2ff;
+  border-color: #e8f2ff;
+  color: #314867;
+
+  &_selected {
+    background-color: #00a9ec;
+    border-color: #00a9ec;
+    color: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #00a9ec;
+    border-color: #00a9ec;
+  }
+}
+
+.group-btn {
+  background-color: #fff;
+  border-color: #fff;
+  color: #4f4f4f;
+
+  &:hover,
+  &:focus {
+    background-color: #e8f2ff;
+    border-color: #e8f2ff;
+    color: #4f4f4f;
+  }
+}
+
+.btn {
+  outline: none !important;
+  box-shadow: none !important;
 }

@@ -10,6 +10,7 @@ import {ScholarshipPage} from './pages/ScholarshipPage';
 import {SessionPage} from './pages/SessionPage';
 import {DepartmentsPage} from './pages/DepartmentsPage';
 import {ChartsPage} from './pages/ChartsPage';
+import {InstitutionsPage} from './pages/InstitutionsPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,6 +22,10 @@ root.render(
       <Route path="attestation/departments" element={<DepartmentsPage />} />
       <Route path="attestation/departments/:name" element={<ChartsPage />} />
       <Route path="attestation/university" element={<ChartsPage />} />
+      <Route path="attestation/institutions" element={<InstitutionsPage />} />
+      <Route path="attestation/institutions/:name" element={<ChartsPage />} />
+      <Route path="attestation/institutions/:name/:group" element={<ChartsPage />} />
+
       <Route path="scholarship" element={<ScholarshipPage />} />
       <Route path="session" element={<SessionPage />} />
     </Routes>

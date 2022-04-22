@@ -13,14 +13,18 @@ const ItemList = () => {
     navigate('/attestation/university');
   };
 
+  const goToInstitutions = () => {
+    navigate('/attestation/institutions');
+  };
+
   return (
     <div className="item-list">
       <h1>Уровень отображения</h1>
       <div className="my-5">
         <Item label="Университет" onClick={goToCharts} />
-        <Item label="Институт" />
+        <Item label="Институт" onClick={goToInstitutions} />
         <Item label="Кафедра" onClick={goToScholarship} />
-        <Item label="Группа" />
+        <Item label="Группа" onClick={goToInstitutions} />
       </div>
     </div>
   );
