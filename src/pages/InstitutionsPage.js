@@ -24,8 +24,9 @@ const InstitutionsPage = () => {
   return (
     <div className="institutions-page">
       <Breadcrumb />
+      <h1 className="my-5 text-center">Список институтов</h1>
 
-      <Button variant="primary" className="d-flex align-items-center mb-5" onClick={goToChartsInstitution}>
+      <Button variant="secondary" className="d-flex align-items-center mt-2 mb-5" onClick={goToChartsInstitution}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -41,7 +42,7 @@ const InstitutionsPage = () => {
       </Button>
 
       <div className="institutions-page__content">
-        <div className="d-flex gap-2 mb-4">
+        <div className="d-flex gap-2 mb-4 flex-wrap">
           {institutions.map((institution) => (
             <Button
               key={institution.name}

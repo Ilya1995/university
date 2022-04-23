@@ -15,13 +15,15 @@ const ChartsPage = () => {
   return (
     <div className="charts-page">
       <Breadcrumb />
-      <h1>Полугодие</h1>
-      <div className="d-flex justify-content-start my-5 gap-5">
-        <Circle percent={firstPercent} label="Количество аттестованных студентов" />
-        <Circle percent={secondPercent} label="Количество неаттестованных студентов" />
+      <h1 className="my-5 text-center">Полугодие</h1>
+      <div className="d-flex align-items-center flex-column">
+        <div className="d-flex justify-content-start gap-5 mb-5">
+          <Circle percent={firstPercent} label="Количество аттестованных студентов" />
+          <Circle percent={secondPercent} label="Количество неаттестованных студентов" />
+        </div>
+        <div className="line" />
+        <h5 className="mt-3">Общее количество студентов</h5>
       </div>
-      <div className="line" />
-      <h5>Общее количество студентов</h5>
     </div>
   );
 };

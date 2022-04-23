@@ -59,7 +59,7 @@ const Breadcrumb = () => {
           );
         })}
       </div>
-      <Button variant="primary" className="d-flex align-items-center" onClick={goToHome}>
+      <Button variant="secondary" className="d-flex align-items-center" onClick={goToHome}>
         На главную
         <svg
           xmlns="http://www.w3.org/2000/svg"

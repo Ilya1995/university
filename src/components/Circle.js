@@ -4,10 +4,12 @@ const Circle = ({label = '', percent = 100}) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
+    setCount(0);
+
     const timerId = setInterval(() => {
       setCount((prev) => {
         const newState = ++prev;
-        if (newState == percent) {
+        if (newState >= percent) {
           clearInterval(timerId);
           return prev;
         } else {

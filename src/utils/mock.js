@@ -70,6 +70,42 @@ export const institutions = [
       'Пятый курс': ['КБ-51'],
     },
   },
+  {
+    name: 'ИМ',
+    groups: {},
+  },
+  {
+    name: 'ИСИ',
+    groups: {},
+  },
+  {
+    name: 'ИТОМ',
+    groups: {},
+  },
+  {
+    name: 'ИЭиМ',
+    groups: {},
+  },
+  {
+    name: 'КВТ',
+    groups: {},
+  },
+  {
+    name: 'ПФИ',
+    groups: {},
+  },
+  {
+    name: 'ТТИ',
+    groups: {},
+  },
+  {
+    name: 'УПКВК',
+    groups: {},
+  },
+  {
+    name: 'ХТИ',
+    groups: {},
+  },
 ];
 
 export const statistics = {
