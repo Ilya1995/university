@@ -1,0 +1,63 @@
+.cube {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 200px;
+  height: 200px;
+
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 30px;
+  position: relative;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &__label {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: #fff;
+    max-width: 300px;
+  }
+
+  &__img {
+    opacity: 0.5;
+    height: 90px;
+    filter: invert(1);
+  }
+}
+
+.university {
+  background-color: #3784bb;
+
+  &:hover {
+    box-shadow: 0 15px 30px rgb(68 150 255 / 45%);
+  }
+}
+
+.institution {
+  background-color: #41bc7a;
+
+  &:hover {
+    box-shadow: 0 15px 30px rgb(112 237 111 / 45%);
+  }
+}
+
+.department {
+  background-color: #1fb5ca;
+
+  &:hover {
+    box-shadow: 0 15px 30px rgb(98 197 208 / 45%);
+  }
+}
+
+.group {
+  background-color: #9962d0;
+
+  &:hover {
+    box-shadow: 0 15px 30px rgb(153 98 208 / 45%);
+  }
+}

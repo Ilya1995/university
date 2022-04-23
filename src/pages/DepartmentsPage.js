@@ -1,6 +1,5 @@
 import React from 'react';
 import {useNavigate} from 'react-router-dom';
-import ListGroup from 'react-bootstrap/ListGroup';
 import {Breadcrumb} from '../components/Breadcrumb';
 import {departments} from '../utils/mock';
 
@@ -14,22 +13,13 @@ const DepartmentsPage = () => {
   return (
     <div className="departments-page">
       <Breadcrumb />
-
-      <ListGroup as="ol" numbered>
+      <ol className="list-counter-circle">
         {departments.map((department) => (
-          <ListGroup.Item
-            key={department}
-            action
-            as="li"
-            onClick={() => goToCharts(department)}
-            className="d-flex justify-content-between align-items-start"
-          >
-            <div className="ms-2 me-auto">
-              <div className="fw-bold">{department}</div>
-            </div>
-          </ListGroup.Item>
+          <li key={department} onClick={() => goToCharts(department)}>
+            {department}
+          </li>
         ))}
-      </ListGroup>
+      </ol>
     </div>
   );
 };
