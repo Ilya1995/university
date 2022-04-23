@@ -1,24 +1,32 @@
 import React from 'react';
-import {useNavigate} from 'react-router-dom';
-import {Item} from './Item';
+import {useNavigate, useLocation} from 'react-router-dom';
 
-const ItemList = () => {
+const Item = ({label, onClick}) => {
+  return (
+    <div className="item mb-3" onClick={onClick}>
+      {label}
+    </div>
+  );
+};
+
+const LevelPage = () => {
   const navigate = useNavigate();
+  const location = useLocation();
 
   const goToScholarship = () => {
-    navigate('/attestation/departments');
+    navigate(`${location.pathname}/departments`);
   };
 
   const goToCharts = () => {
-    navigate('/attestation/university');
+    navigate(`${location.pathname}/university`);
   };
 
   const goToInstitutions = () => {
-    navigate('/attestation/institutions');
+    navigate(`${location.pathname}/institutions`);
   };
 
   return (
-    <div className="item-list">
+    <div className="level-page">
       <h1>Уровень отображения</h1>
       <div className="my-5">
         <Item label="Университет" onClick={goToCharts} />
@@ -30,4 +38,4 @@ const ItemList = () => {
   );
 };
 
-export {ItemList};
+export {LevelPage};

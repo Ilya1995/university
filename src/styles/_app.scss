@@ -18,7 +18,6 @@
 }
 
 .session-page,
-.attestation-page,
 .scholarship-page {
   display: flex;
   justify-content: center;
@@ -26,6 +25,7 @@
 
 .departments-page,
 .charts-page,
+.level-page,
 .institutions-page {
   display: flex;
   align-items: center;
@@ -37,19 +37,17 @@
   left: -0.75rem;
 }
 
-.item-list {
-  .item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #a89edc;
-    cursor: pointer;
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #a89edc;
+  cursor: pointer;
 
-    &:hover {
-      background-color: rgb(240, 240, 240);
-    }
+  &:hover {
+    background-color: rgb(240, 240, 240);
   }
 }
 

@@ -5,9 +5,7 @@ import './styles/index.scss';
 import {Header} from './components/Header';
 import {Footer} from './components/Footer';
 import {HomePage} from './pages/HomePage';
-import {AttestationPage} from './pages/AttestationPage';
-import {ScholarshipPage} from './pages/ScholarshipPage';
-import {SessionPage} from './pages/SessionPage';
+import {LevelPage} from './pages/LevelPage';
 import {DepartmentsPage} from './pages/DepartmentsPage';
 import {ChartsPage} from './pages/ChartsPage';
 import {InstitutionsPage} from './pages/InstitutionsPage';
@@ -18,16 +16,13 @@ root.render(
     <Header />
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="attestation" element={<AttestationPage />} />
-      <Route path="attestation/departments" element={<DepartmentsPage />} />
-      <Route path="attestation/departments/:name" element={<ChartsPage />} />
-      <Route path="attestation/university" element={<ChartsPage />} />
-      <Route path="attestation/institutions" element={<InstitutionsPage />} />
-      <Route path="attestation/institutions/:name" element={<ChartsPage />} />
-      <Route path="attestation/institutions/:name/:group" element={<ChartsPage />} />
-
-      <Route path="scholarship" element={<ScholarshipPage />} />
-      <Route path="session" element={<SessionPage />} />
+      <Route path=":item" element={<LevelPage />} />
+      <Route path=":item/departments" element={<DepartmentsPage />} />
+      <Route path=":item/departments/:name" element={<ChartsPage />} />
+      <Route path=":item/university" element={<ChartsPage />} />
+      <Route path=":item/institutions" element={<InstitutionsPage />} />
+      <Route path=":item/institutions/:name" element={<ChartsPage />} />
+      <Route path=":item/institutions/:name/:group" element={<ChartsPage />} />
     </Routes>
     <Footer />
   </Router>,

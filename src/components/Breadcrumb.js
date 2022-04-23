@@ -7,6 +7,8 @@ const routs = {
   departments: 'Кафедры',
   university: 'Университет',
   institutions: 'Институты',
+  scholarship: 'Стипендия',
+  session: 'Сессия',
 };
 
 const Breadcrumb = () => {
