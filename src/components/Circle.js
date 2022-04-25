@@ -22,7 +22,7 @@ const Circle = ({label = '', percent = 100}) => {
   return (
     <div>
       <div className="circle mb-3">{count}%</div>
-      <div>{label}</div>
+      <div className="text-color">{label}</div>
     </div>
   );
 };

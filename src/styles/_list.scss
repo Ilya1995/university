@@ -14,15 +14,15 @@
     margin-bottom: 0.25rem;
     padding-left: 1rem;
     padding-right: 0.5rem;
-    color: #314867;
-    background-color: #e8f2ff;
+    color: $dark;
+    background-color: $light;
     white-space: nowrap;
     border-radius: 0.25rem;
 
     &:hover {
-      color: #314867;
-      background-color: #00a9ec;
-      color: #fff;
+      color: $dark;
+      background-color: $blue;
+      color: $white;
     }
 
     &:before {
@@ -35,10 +35,10 @@
       width: 2.5rem;
       line-height: 2rem;
       border-radius: 1.25rem;
-      border: 0.25rem solid #fff;
+      border: 0.25rem solid $white;
       text-align: center;
-      color: #314867;
-      background-color: #e8f2ff;
+      color: $dark;
+      background-color: $light;
     }
   }
 

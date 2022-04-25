@@ -1,7 +1,7 @@
 .home-page {
   &__carousel-item {
     height: calc(100vh - 56px);
-    background-color: #e8f2ff;
+    background-color: $light;
   }
 
   .carousel-caption {
@@ -40,52 +40,38 @@
   left: -0.75rem;
 }
 
-.item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #a89edc;
-  cursor: pointer;
-
-  &:hover {
-    background-color: rgb(240, 240, 240);
-  }
-}
-
 li {
   cursor: pointer;
 }
 
 .breadcrumb-item {
-  color: #4f4f4f;
+  color: $bt-dark;
   cursor: pointer;
 
   &:hover {
-    color: #21ade4;
+    color: $blue;
   }
 
   &_disabled {
-    color: #a5a5a5;
+    color: $disabled;
     cursor: default;
 
     &:hover {
-      color: #a5a5a5;
+      color: $disabled;
     }
   }
 }
 
 .line {
-  border-bottom: 2px solid grey;
+  border-bottom: 2px solid $disabled;
   width: 100%;
 }
 
 .circle {
-  border: 3px solid #00a9ec;
+  border: 3px solid $blue;
   border-radius: 50%;
-  background-color: #e8f2ff;
-  color: #314867;
+  background-color: $light;
+  color: $dark;
   width: 300px;
   height: 300px;
   font-size: 30px;
@@ -96,33 +82,33 @@ li {
 }
 
 .institution-btn {
-  background-color: #e8f2ff;
-  border-color: #e8f2ff;
-  color: #314867;
+  background-color: $light;
+  border-color: $light;
+  color: $dark;
 
   &_selected {
-    background-color: #00a9ec;
-    border-color: #00a9ec;
-    color: #fff;
+    background-color: $blue;
+    border-color: $blue;
+    color: $white;
   }
 
   &:hover,
   &:focus {
-    background-color: #00a9ec;
-    border-color: #00a9ec;
+    background-color: $blue;
+    border-color: $blue;
   }
 }
 
 .group-btn {
-  background-color: #fff;
-  border-color: #fff;
-  color: #4f4f4f;
+  background-color: $white;
+  border-color: $white;
+  color: $bt-dark;
 
   &:hover,
   &:focus {
-    background-color: #e8f2ff;
-    border-color: #e8f2ff;
-    color: #4f4f4f;
+    background-color: $light;
+    border-color: $light;
+    color: $bt-dark;
   }
 }
 
@@ -138,9 +124,9 @@ li {
 }
 
 .text-color {
-  color: #314867;
+  color: $dark;
 
   &__active {
-    color: #00a9ec;
+    color: $blue;
   }
 }

@@ -19,7 +19,7 @@ const LevelPage = () => {
 
   return (
     <div className="level-page">
-      <h1 className="mb-5">Уровень отображения</h1>
+      <h1 className="mb-5 text-color">Уровень отображения</h1>
 
       <div className="level-page__content">
         <div className="cube university" onClick={goToCharts}>

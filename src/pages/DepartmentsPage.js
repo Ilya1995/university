@@ -13,7 +13,7 @@ const DepartmentsPage = () => {
   return (
     <div className="container departments-page">
       <Breadcrumb />
-      <h1 className="my-5 text-center">Список кафедр</h1>
+      <h1 className="my-5 text-center text-color">Список кафедр</h1>
       <ol className="list-counter-circle mt-2 mb-5">
         {departments.map((department) => (
           <li key={department} onClick={() => goToCharts(department)}>

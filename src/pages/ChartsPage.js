@@ -15,7 +15,7 @@ const ChartsPage = () => {
   return (
     <div className="charts-page">
       <Breadcrumb />
-      <h1 className="my-5 text-center">Полугодие</h1>
+      <h1 className="my-5 text-center text-color">Полугодие</h1>
       <div className="d-flex align-items-center flex-column">
         <div className="d-flex justify-content-start gap-5 mb-5">
           <Circle percent={firstPercent} label="Количество аттестованных студентов" />
