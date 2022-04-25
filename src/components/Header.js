@@ -11,7 +11,7 @@ const Header = () => {
         <Container>
           <Navbar.Brand>
             <Link to="/">
-              <img src="/logo.png" className="d-inline-block align-top logo" alt="logo" />
+              <img src="university/logo.png" className="d-inline-block align-top logo" alt="logo" />
             </Link>
           </Navbar.Brand>
           <Nav className="me-auto">
