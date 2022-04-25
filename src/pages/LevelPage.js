@@ -23,19 +23,19 @@ const LevelPage = () => {
 
       <div className="level-page__content">
         <div className="cube university" onClick={goToCharts}>
-          <img className="cube__img" src="university/university.png" alt="university"></img>
+          <img className="cube__img" src="university.png" alt="university"></img>
           <div className="cube__label">Университет</div>
         </div>
         <div className="cube institution" onClick={goToInstitutions}>
-          <img className="cube__img" src="university/institution.png" alt="institution"></img>
+          <img className="cube__img" src="institution.png" alt="institution"></img>
           <div className="cube__label">Институт</div>
         </div>
         <div className="cube department" onClick={goToScholarship}>
-          <img className="cube__img" src="university/department.png" alt="department"></img>
+          <img className="cube__img" src="department.png" alt="department"></img>
           <div className="cube__label">Кафедра</div>
         </div>
         <div className="cube group" onClick={goToInstitutions}>
-          <img className="cube__img" src="university/group.png" alt="group"></img>
+          <img className="cube__img" src="group.png" alt="group"></img>
           <div className="cube__label">Группа</div>
         </div>
       </div>
