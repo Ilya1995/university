@@ -7,7 +7,7 @@ const DepartmentsPage = () => {
   const navigate = useNavigate();
 
   const goToCharts = (item) => {
-    navigate(`/attestation/departments/${item}`);
+    navigate(`/university/attestation/departments/${item}`);
   };
 
   return (

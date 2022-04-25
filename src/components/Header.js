@@ -10,18 +10,18 @@ const Header = () => {
       <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand>
-            <Link to="/">
-              <img src="logo.png" className="d-inline-block align-top logo" alt="logo" />
+            <Link to="/university/">
+              <img src="/university/logo.png" className="d-inline-block align-top logo" alt="logo" />
             </Link>
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Link className="nav-link" to="/attestation">
+            <Link className="nav-link" to="/university/attestation">
               Аттестация
             </Link>
-            <Link className="nav-link" to="/scholarship">
+            <Link className="nav-link" to="/university/scholarship">
               Стипендия
             </Link>
-            <Link className="nav-link" to="/session">
+            <Link className="nav-link" to="/university/session">
               Сессия
             </Link>
           </Nav>

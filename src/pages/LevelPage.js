@@ -18,7 +18,7 @@ const LevelPage = () => {
   };
 
   return (
-    <div className="level-page">
+    <div className="level-page mb-3">
       <h1 className="mb-5 text-color">Уровень отображения</h1>
 
       <div className="level-page__content">

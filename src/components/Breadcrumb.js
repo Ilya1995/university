@@ -15,7 +15,7 @@ const routs = {
 const Breadcrumb = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const items = location.pathname.split('/').slice(1);
+  const items = location.pathname.split('/').slice(2);
 
   const handleClick = (value = '') => {
     const url = location.pathname.slice(0, location.pathname.indexOf(value));
@@ -23,7 +23,7 @@ const Breadcrumb = () => {
   };
 
   const goToHome = () => {
-    navigate('/');
+    navigate('/university');
   };
 
   return (

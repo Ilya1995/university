@@ -22,7 +22,7 @@ const ChartsPage = () => {
           <Circle percent={secondPercent} label="Количество неаттестованных студентов" />
         </div>
         <div className="line" />
-        <h5 className="mt-3">Общее количество студентов</h5>
+        <h5 className="mt-3 text-color">Общее количество студентов</h5>
       </div>
     </div>
   );

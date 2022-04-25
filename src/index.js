@@ -16,14 +16,14 @@ root.render(
     <Header />
     <div className="container">
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path=":item" element={<LevelPage />} />
-        <Route path=":item/departments" element={<DepartmentsPage />} />
-        <Route path=":item/departments/:name" element={<ChartsPage />} />
-        <Route path=":item/university" element={<ChartsPage />} />
-        <Route path=":item/institutions" element={<InstitutionsPage />} />
-        <Route path=":item/institutions/:name" element={<ChartsPage />} />
-        <Route path=":item/institutions/:name/:group" element={<ChartsPage />} />
+        <Route path="/university" element={<HomePage />} />
+        <Route path="/university/:item" element={<LevelPage />} />
+        <Route path="/university/:item/departments" element={<DepartmentsPage />} />
+        <Route path="/university/:item/departments/:name" element={<ChartsPage />} />
+        <Route path="/university/:item/university" element={<ChartsPage />} />
+        <Route path="/university/:item/institutions" element={<InstitutionsPage />} />
+        <Route path="/university/:item/institutions/:name" element={<ChartsPage />} />
+        <Route path="/university/:item/institutions/:name/:group" element={<ChartsPage />} />
       </Routes>
     </div>
     <Footer />
